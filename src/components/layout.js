@@ -1,12 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header'
-import Footer from './Footer'
+import Header from './header';
+import Footer from './Footer';
+import Sidebar from './Sidebar';
+
 import '../styles/index.scss';
+import { Row, Col } from 'reactstrap';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageTitle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -22,9 +25,13 @@ const Layout = ({ children }) => (
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossOrigin="anonymous"/>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container" id="content">
-          {children}
-        <Footer/>
+          <h1>{pageTitle}</h1>
+          <Row>
+            <Col md="8">{children}</Col>
+            <Col md="4"><Sidebar/></Col>
+          </Row>
         </div>
+        <Footer/>
       </>
     )}
   />
