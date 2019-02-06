@@ -115,7 +115,7 @@ exports.createPages = async ({ actions, graphql }) => {
     postList: path.resolve('src/templates/post-list.js'),
     tag: path.resolve('src/templates/tag-posts.js'),
     tagsPage: path.resolve('src/templates/tags-page.js'),
-    //authorPosts: path.resolve('src/templates/author-posts.js'),
+    authorPosts: path.resolve('src/templates/author-posts.js'),
   }
 
   const res = await graphql(`
@@ -193,9 +193,6 @@ exports.createPages = async ({ actions, graphql }) => {
     tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
   })
 
-  console.log(tags)
-  console.log(tagPostCounts)
-
   // Remove duplicates
   tags = _.uniq(tags)
 
@@ -220,7 +217,7 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   })
 
-  /*// Create author posts pages
+  // Create author posts pages
   authors.forEach(author => {
     createPage({
       path: `/author/${slugify(author.name)}`,
@@ -230,5 +227,5 @@ exports.createPages = async ({ actions, graphql }) => {
         imageUrl: author.imageUrl,
       },
     })
-  })*/
+  })
 }
