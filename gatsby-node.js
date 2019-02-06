@@ -113,7 +113,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const templates = {
     post: path.resolve('src/templates/single-post.js'),
     //postList: path.resolve('src/templates/post-list.js'),
-    //tag: path.resolve('src/templates/tag-posts.js'),
+    tag: path.resolve('src/templates/tag-posts.js'),
     tagsPage: path.resolve('src/templates/tags-page.js'),
     //authorPosts: path.resolve('src/templates/author-posts.js'),
   }
@@ -208,7 +208,7 @@ exports.createPages = async ({ actions, graphql }) => {
     },
   })
 
-  /*// Tag posts pages
+  // Tag posts pages
   tags.forEach(tag => {
     createPage({
       path: `/tag/${_.kebabCase(tag)}`,
@@ -219,7 +219,7 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   })
 
-  // Create author posts pages
+  /*// Create author posts pages
   authors.forEach(author => {
     createPage({
       path: `/author/${slugify(author.name)}`,
