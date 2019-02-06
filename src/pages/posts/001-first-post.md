@@ -6,6 +6,8 @@ image: ../../images/javascript.jpg
 tags:
 - code
 - web design
+- web development
+- time management
 ---
 
 Welcome to Paul's Code Blog. I hope you find this application to be useful.

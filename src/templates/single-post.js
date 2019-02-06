@@ -66,7 +66,7 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
           <li>
             <a
-              href={ 'https://twitter.com/share?url=' + baseUrl + pageContext.slug + '&text=' + post.title + '&via' + 'tiwtterHandle'}
+              href={ 'https://twitter.com/share?url=' + baseUrl + pageContext.slug + '&text=' + post.title + '&via' + 'twitterHandle'}
               className="twitter"
               target="_blank"
               rel="noopener noreferrer">
