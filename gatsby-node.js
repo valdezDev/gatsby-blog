@@ -112,7 +112,7 @@ exports.createPages = async ({ actions, graphql }) => {
   // Page templates
   const templates = {
     post: path.resolve('src/templates/single-post.js'),
-    //postList: path.resolve('src/templates/post-list.js'),
+    postList: path.resolve('src/templates/post-list.js'),
     tag: path.resolve('src/templates/tag-posts.js'),
     tagsPage: path.resolve('src/templates/tags-page.js'),
     //authorPosts: path.resolve('src/templates/author-posts.js'),
@@ -155,7 +155,7 @@ exports.createPages = async ({ actions, graphql }) => {
       },
     })
   })
-  /*
+  
   // Create posts pagination pages
   const postsPerPage = 2
   const numberOfPages = Math.ceil(posts.length / postsPerPage)
@@ -177,7 +177,8 @@ exports.createPages = async ({ actions, graphql }) => {
         currentPage: currentPage,
       },
     })
-  })*/
+  })
+
   // Get all tags
   let tags = []
   _.each(posts, edge => {
