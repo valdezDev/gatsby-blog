@@ -2,7 +2,7 @@
 title: 'First Post - Introduction'
 date: 2019-01-9 04:19:00
 author: 'Paul Valdez'
-image: ../../images/javascript.jpg
+image: ../../images/post0.jpg
 tags:
 - code
 - web design

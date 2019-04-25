@@ -1,8 +1,9 @@
 .site-footer {
-  background-color: $white;
+  background-image: linear-gradient(to bottom, darken($blue, 11%), darken($blue, 22%));
   margin-top: 20px;
   padding: 10px;
   text-align: center;
+  color: darken($blue, 44%);
 
   .footer-social-links {
     text-align: center;
@@ -13,7 +14,7 @@
         display: inline-block;
 
         a {
-          color: $dark-gray;
+          color: lighten($blue, 29%);
 
           &.instagram:hover {
             color: #e95950;

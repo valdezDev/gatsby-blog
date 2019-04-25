@@ -2,7 +2,7 @@
 title: 'Second Post - HTML'
 date: 2019-01-10 05:19:00
 author: 'Leroy Brown'
-image: ../../images/javascript.jpg
+image: ../../images/post1.jpg
 tags:
 - code
 - web design

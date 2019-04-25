@@ -16,15 +16,15 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => (
           </Link>
         </CardTitle>
         <CardSubtitle>
-          <span className="text-info">{date}</span> by{' '}
-          <span className="text-info">{author}</span>
+          <span className="card-subtitle">{date}</span> by{' '}
+          <span className="card-subtitle">{author}</span>
         </CardSubtitle>
-      <CardText>{body}</CardText>
+      <CardText className="card-text">{body}</CardText>
       <ul className="post-tags">
         {tags.map(tag => (
           <li key={tag}>
             <Link to={`/tag/${slugify(tag)}`}>
-              <Badge color="primary" className="text-uppercase">
+              <Badge className="text-uppercase post-badge">
                 {tag}
               </Badge>
             </Link>
@@ -35,7 +35,7 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => (
 
         <Link
           to={slug}
-          className="btn btn-outline-primary float-right">
+          className="btn read-more-btn float-right">
           Read More
         </Link>
       </CardBody>

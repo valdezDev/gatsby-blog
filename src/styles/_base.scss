@@ -1,16 +1,19 @@
 .container#content {
   margin-top: 60px;
 }
+
 body {
-  background-color: $light-gray;
+  background-image: linear-gradient(to bottom, $blue, darken($blue, 12%));
 }
+
 a {
-  color: #0056b3;
+  color: $pink2;
   &:hover {
-    color: #007bff;
+    color: $pink;
     text-decoration: none;
   }
 }
+
 body {
   font-family: $site-font;
 }
@@ -19,17 +22,16 @@ h1 {
   text-align: center;
 }
 .navbar {
-  background-color: white;
-  // border-right: 1px solid rgba(0, 0, 0, 0.4);
-  // border-left: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  //background-image: linear-gradient(to bottom, lighten($blue, 12%), $blue);
+  background: $dark;
+  //border-bottom: 1px solid darken($blue, 15%);
   line-height: 1;
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #0056b3;
+  color: $pink2;
   &:hover {
-    color: #007bff;
+    color: $pink;
   }
 }
 ul {

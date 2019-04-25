@@ -1,13 +1,12 @@
 .author-social-links {
   ul {
     display: inline-flex;
-
     li {
       margin: auto 7px;
 
       a {
         transition: all 0.1s ease-out;
-        color: $dark-gray;
+        color: $white;
 
         &.instagram:hover {
           color: #e95950;
@@ -26,5 +25,16 @@
         }
       }
     }
+  }
+}
+
+.sub-btn {
+  background: rgba(0,0,0,0.00001);
+  border-color: $pink2;
+  color: $pink2;
+  transition: color ease-in-out 0.3s, all ease-in-out 0.3s;
+  &:hover {
+    color: white;
+    background-color: $pink2;
   }
 }

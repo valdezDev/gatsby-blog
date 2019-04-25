@@ -34,16 +34,16 @@ const SinglePost = ({ data, pageContext }) => {
           fluid={post.image.childImageSharp.fluid}
         />
         <CardBody>
-          <CardSubtitle>
-            <span className="text-info">{post.date}</span> by {' '}
-            <span className="text-info">{post.author}</span>
+          <CardSubtitle card-subtoit>
+            <span className="card-subtitle">{post.date}</span> by {' '}
+            <span className="card-subtitle">{post.author}</span>
           </CardSubtitle>
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <div className="card-text" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           <ul className="post-tags">
             {post.tags.map(tag => (
               <li key={tag}>
                 <Link to={`/tag/${slugify(tag)}`}>
-                  <Badge color="primary">{tag}</Badge>
+                  <Badge className="post-badge" >{tag}</Badge>
                 </Link>
               </li>
             ))}

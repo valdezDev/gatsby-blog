@@ -2,7 +2,7 @@
 title: 'Third Post - CSS'
 date: 2019-01-31 04:19:00
 author: 'Paul Valdez'
-image: ../../images/javascript.jpg
+image: ../../images/post2.jpg
 tags:
 - web design
 - tutorial

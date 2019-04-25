@@ -10,23 +10,23 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
   return (
     <Pagination aria-label="Page navigation example">
       {isFirst ? (
-        <PaginationItem disabled>
+        <PaginationItem className="page-arrows" disabled>
           <PaginationLink previous href="/" />
         </PaginationItem>
       ) : (
-        <PaginationItem>
+        <PaginationItem className="page-arrows">
           <PaginationLink previous href={previousPage} />
         </PaginationItem>
       )}
       {Array.from({ length: numberOfPages }, (_, i) =>
         currentPage === i + 1 ? (
-          <PaginationItem active key={`page-number${i + 1}`}>
+          <PaginationItem className="page-arrows" active key={`page-number${i + 1}`}>
             <PaginationLink href={`/${i === 0 ? '' : 'page/' + (i + 1)}`}>
               {i + 1}
             </PaginationLink>
           </PaginationItem>
         ) : (
-          <PaginationItem key={`page-number${i + 1}`}>
+          <PaginationItem className="page-arrows" key={`page-number${i + 1}`}>
             <PaginationLink href={`/${i === 0 ? '' : 'page/' + (i + 1)}`}>
               {i + 1}
             </PaginationLink>
@@ -34,12 +34,12 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
         )
       )}
       {isLast ? (
-        <PaginationItem disabled>
+        <PaginationItem className="page-arrows" disabled>
           <PaginationLink next href={nextPage} />
         </PaginationItem>
       ) : (
-        <PaginationItem>
-          <PaginationLink next href={nextPage} />
+        <PaginationItem className="page-arrows">
+          <PaginationLink  next href={nextPage} />
         </PaginationItem>
       )}
     </Pagination>

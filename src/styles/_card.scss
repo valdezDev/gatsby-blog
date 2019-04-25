@@ -1,5 +1,25 @@
 .card {
   margin-bottom: 30px;
+  background-image: linear-gradient(to bottom, lighten($dark, 1%), lighten($dark, 3%));
+}
+
+.read-more-btn {
+  background: rgba(0,0,0,0.00001);
+  border-color: $pink;
+  color: $pink;
+  transition: color ease-in-out 0.3s, all ease-in-out 0.3s;
+  &:hover {
+    color: white;
+    background-color: $pink;
+  }
+}
+
+.card-subtitle {
+  color: $blue;
+}
+
+.card-text {
+  color: lighten($blue, 26%);
 }
 ul.post-tags {
   padding: 0;
@@ -9,4 +29,41 @@ ul.post-tags {
   li {
     margin-right: 10px;
   }
+}
+
+.post-badge {
+  background: $blue;
+  color: darken($blue, 44%);
+  transition: color ease-in-out 0.3s;
+  &:hover {
+    color: white;
+  }
+}
+
+// pagination links
+
+.page-item:last-child .page-link {
+  background: darken($blue, 10%);
+  border-color: lighten($blue, 30%);
+  color: white;
+}
+
+.page-item.disabled .page-link {
+  background: darken($blue, 10%) !important;
+  border-color: lighten($blue, 30%);
+  color: darken(white, 75%);
+}
+
+.page-item:first-child .page-link {
+  //background: red;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+  background: darken($blue, 10%);
+  color: darken(white, 75%);
+}
+
+.page-item.active .page-link {
+  background: darken($blue, 25%);
+  color: white;
 }

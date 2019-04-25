@@ -9,13 +9,13 @@ const Sidebar = ({ author, authorFluid }) => (
       <Card>
         <Img className="card-image-top" fluid={authorFluid} />
         <CardBody>
-          <CardTitle className="text-center text-uppercase mb-3">
+          <CardTitle className="text-center text-uppercase mb-3 text-white">
             {author.name}
           </CardTitle>
           <CardText>
             {author.bio}
           </CardText>
-          <div className="author-social-links text-center">
+          <div className="author-social-links text-center text-white">
             <ul>
               <li>
                 <a
@@ -74,7 +74,7 @@ const Sidebar = ({ author, authorFluid }) => (
     )}
     <Card>
       <CardBody>
-        <CardTitle className="text-center text-uppercase-mb-3">
+        <CardTitle className="text-center text-uppercase-mb-3 text-white">
           Newsletter
         </CardTitle>
         <Form className="text-center">
@@ -85,7 +85,7 @@ const Sidebar = ({ author, authorFluid }) => (
               placeholder="Your email address.."
             />
           </FormGroup>
-          <button className="btn btn-outline-success text-uppercase">
+          <button className="btn sub-btn text-uppercase">
             Subscribe
           </button>
         </Form>
@@ -93,7 +93,7 @@ const Sidebar = ({ author, authorFluid }) => (
     </Card>
     <Card>
       <CardBody>
-        <CardTitle className="text-center text-uppercase">
+        <CardTitle className="text-center text-uppercase text-white">
           Advertisement
         </CardTitle>
         <img src="https://via.placeholder.com/320x200" alt="Advert" style={{width: '100%'}}/>
@@ -101,7 +101,7 @@ const Sidebar = ({ author, authorFluid }) => (
     </Card>
     <Card>
       <CardBody>
-        <CardTitle className="text-center text-uppercase mb-3">
+        <CardTitle className="text-center text-uppercase mb-3 text-white">
           Recent Posts
         </CardTitle>
         <StaticQuery query={sidebarQuery} render={(data) => (
