@@ -24,8 +24,13 @@ const Footer = () => (
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
+          <a href="https://www.linkedin.com/in/valdezdev/" target="_blank" rel="noopener noreferrer" className="linkedin">
           <i className="fab fa-linkedin fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/valdezDev" target="_blank" rel="noopener noreferrer" className="github">
+          <i className="fab fa-github fa-2x"></i>
           </a>
         </li>
       </ul>

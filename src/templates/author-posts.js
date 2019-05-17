@@ -1,8 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout'
-import Post from '../components/Post'
-import { graphql } from 'gatsby'
-import authors from '../util/authors'
+import React from 'react';
+import Layout from '../components/layout';
+import Post from '../components/Post';
+import { graphql } from 'gatsby';
+import authors from '../util/authors';
 
 const authorPosts = ({ data, pageContext }) => {
   const { totalCount } = data.allMarkdownRemark
@@ -71,4 +71,4 @@ export const authorQuery = graphql`
   }
 `
 
-export default authorPosts
+export default authorPosts;
