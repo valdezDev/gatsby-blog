@@ -22,4 +22,4 @@ Live Demo can be found [here.](https://unruffled-bartik-96bf86.netlify.com/)
 
 ## INSTRUCTIONS
 * In a terminal, change to the directory: ```cd gatsby-blog``` and launch the command: ```gatsby develop```
-* Once the development server starts up, it should route the browser over to ```localhost:8000```. Feel free to test it out and experiment with the blog!
+* Once the development server starts up, it will route the browser over to ```localhost:8000```.
