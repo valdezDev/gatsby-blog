@@ -14,7 +14,7 @@ A simple tempalate for a lightweight blog application that writers can use to br
 
 * Designed the layout and components using Sass and Bootstrap.
 
-Biggest Challenge: Understanding how to set up GraphQL to get it to render out markdown files into the application. I've worked with Query Languages and Gatsby makes it easy to test out how your frontmatter data is moving on the ```http://localhost:8000/___graphql```
+Biggest Challenge: Understanding how to set up GraphQL to get it to render out markdown files into the application. I've worked with other query languages before and Gatsby makes it easy to test out how your frontmatter data is moving on the ```http://localhost:8000/___graphql```
 
 Current Objective: Add this app to my [portfolio](https://valdezdev.com) where readers can come and get some useful tutorials!
 
